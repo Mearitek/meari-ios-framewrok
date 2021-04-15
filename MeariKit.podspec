@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = 'MeariKit'
   s.version          = '0.0.1.0'
-  s.summary          = "A short description of #{s.name}."
+  s.summary          = "A short description of MeariKit."
   s.homepage         = 'https://meari.com'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mearitek' => 'support@meari.com.cn' }
@@ -17,5 +17,5 @@ Pod::Spec.new do |s|
   s.dependency 'MJExtension',  '~>3.0.17'
   s.dependency 'AliyunOSSiOS', '~>2.10.7'
   s.dependency 'AWSS3'
-  
+
 end
