@@ -1,0 +1,6 @@
+framework module Pods_MeariKit_Example {
+  umbrella header "Pods-MeariKit_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

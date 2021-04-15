@@ -1,42 +1,21 @@
-#
-# Be sure to run `pod lib lint MeariKit.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
-
 Pod::Spec.new do |s|
   s.name             = 'MeariKit'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of MeariKit.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
-  s.homepage         = 'https://github.com/orange5/MeariKit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.version          = '0.0.1.0'
+  s.summary          = "A short description of #{s.name}."
+  s.homepage         = 'https://meari.com'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'orange5' => 'xiaojuzhuo@gmail.com' }
-  s.source           = { :git => 'https://github.com/orange5/MeariKit.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Mearitek' => 'support@meari.com.cn' }
+  s.source           = { :http => "https://github.com/Mearitek/meari-ios-framewrok.git"}
 
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'MeariKit/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'MeariKit' => ['MeariKit/Assets/*.png']
-  # }
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'x86_64 armv7 arm64' }
+  s.vendored_frameworks = "MeariKit/*.framework"
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.frameworks = 'UIKit','Foundation'
+  s.dependency 'AFNetworking', '~>3.2.1'
+  s.dependency 'MJExtension',  '~>3.0.17'
+  s.dependency 'AliyunOSSiOS', '~>2.10.7'
+  s.dependency 'AWSS3'
+  
 end
