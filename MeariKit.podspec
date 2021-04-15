@@ -1,11 +1,11 @@
 Pod::Spec.new do |s|
   s.name             = 'MeariKit'
   s.version          = '0.0.1.0'
-  s.summary          = "A short description of MeariKit."
+  s.summary          = 'A short description of MeariKit.'
   s.homepage         = 'https://meari.com'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Mearitek' => 'support@meari.com.cn' }
-  s.source           = { :http => "https://github.com/Mearitek/meari-ios-framewrok.git"}
+  s.source           = { :http => 'https://github.com/Mearitek/meari-ios-framewrok.git'}
 
   s.ios.deployment_target = '9.0'
 
